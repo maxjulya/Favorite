@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Soccer Club</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Soccer Theme" />
+  <meta name="keywords" content="HTML,CSS,JavaScript,jQuery" />
+  <meta name="author" content="Max Zhyvotovskyi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script src="js/libs/jquery.countdown.min.js"></script>
+
+  <link rel="stylesheet" href="css/slick.css" />
+  <!-- <link rel="stylesheet" href="css/magnific-popup.css" /> -->
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<!-- <div class="loader">
+    <div class="loader_inner"></div>
+  </div> -->
+
+<body>
+  <header class="top_header">
+    <div class="top_line">
+      <div class="wrapper">
+        <!-- <div class="logo"></div> -->
+        <div class="contact_social">
+          <div class="contact_info">
+            <span class="email">
+              <a href="mailto:soccerinfo@gmail.com"><i class="fas fa-envelope"></i><span>soccerinfo@gmail.com</span></a>
+            </span>
+            <span class="phone"><a href="tel:+566 -78 455 323"><i class="fas fa-mobile-alt"></i>+566 -78 455 323</a>
+            </span>
+          </div>
+          <div class="social">
+            <span>FOLLOW US</span>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="top_navigation">
+      <div class="wrapper">
+        <div class="line_nav">
+          <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo" />
+            <!-- <h1>Favorite Club</h1> -->
+          </a>
+
+          <ul class="header_menu">
+            <li class="current"><a href="#">Home</a></li>
+            <li>
+              <a href="#">Matches</a>
+              <ul class="sub_menu">
+                <li><a href="#">Page_1</a></li>
+                <li><a href="#">Page_2</a></li>
+                <li><a href="#">Page_3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="search_form">
+      <form action="" class="search">
+        <input type="text" name="" class="search_field" />
+      </form>
+    </div> -->
+
+    <div class="home_slider">
+      <div class="slide_item">
+        <figure>
+          <img src="img/bg_1_11.jpg" alt="" />
+          <figcaption>
+            <div class="wrapper">
+              <div class="slider_data">
+                <div class="max_data">05 September 2020, 18:00</div>
+                <div class="max_matcgh_names">
+                  <div class="item_match_name">
+                    FC Favorit Club - FC Loser
+                  </div>
+                </div>
+                <div class="item_place">
+                  <div class="max_place">Favorit Arena, Boston</div>
+                </div>
+                <div class="max_timer">
+                  <div id="getting-started" class="timer_section"></div>
+                  <script type="text/javascript">
+                    $("#getting-started").countdown("2020/09/05", function (
+                      event
+                    ) {
+                      $(this).html(
+                        event.strftime(
+                          "" +
+                          "<div class='item'><span>%-w</span> week%!w </div>" +
+                          "<div class='item'><span>%-d</span> day%!d </div>" +
+                          "<div class='item'><span>%H</span> hour%!H </div>" +
+                          "<div class='item'><span>%M</span> min </div>" +
+                          "<div class='item'><span>%S</span> sec</div>"
+                        )
+                      );
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="slide_item">
+        <figure>
+          <img src="img/bg_2_1.jpg" alt="" />
+          <figcaption>
+            test
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- <div class="gdlr-core-pbf-wrapper" style="padding: 100px 0px 80px 0px;">
+    <div class="gdlr-core-pbf-background-wrap">
+      <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="
+            background-image: url('https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/10/bg-Latest-hp2.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 851.9px;
+            transform: translate(0px, -16.55px);
+          " data-parallax-speed="0.1"></div>
+    </div>
+    <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+      <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+        <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-82194">
+          <div class="gdlr-core-pbf-column-content-margin gdlr-core-js" style="padding: 0px 0px 60px 0px;">
+            <div class="gdlr-core-pbf-background-wrap"></div>
+            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
+              <div class="gdlr-core-pbf-element">
+                <div
+                  class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
+                  style="padding-bottom: 10px;">
+                  <div class="gdlr-core-title-item-title-wrap">
+                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="
+                          font-size: 32px;
+                          font-weight: 600;
+                          letter-spacing: 0px;
+                          text-transform: none;
+                          color: #ffffff;
+                        ">
+                      Fixtures &amp; Results<span
+                        class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="gdlr-core-pbf-element">
+                <div
+                  class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align"
+                  style="margin-bottom: 0px;">
+                  <div class="gdlr-core-divider-container" style="max-width: 32px;">
+                    <div class="gdlr-core-divider-line gdlr-core-skin-divider"
+                      style="border-color: #e31b23; border-width: 5px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gdlr-core-pbf-column gdlr-core-column-40 gdlr-core-column-first" id="gdlr-core-column-81389">
+          <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+            <div class="gdlr-core-pbf-background-wrap"></div>
+            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
+              <div class="gdlr-core-pbf-element">
+                <div
+                  class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space"
+                  style="padding-bottom: 0px;">
+                  <div class="gdlr-core-text-box-item-content" style="text-transform: none;">
+                    <div class="sportspress sp-widget-align-none">
+                      <div class="sp-template sp-template-event-list">
+                        <div class="bigslam-sp-event-featured-holder clearfix">
+                          <div class="bigslam-sp-event-featured-top bigslam-status-vs">
+                            <div class="bigslam-sp-event-featured-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-featured-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="90" height="89"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png"
+                                    class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png       90w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15-32x32.png 32w
+                                      " sizes="(max-width: 90px) 100vw, 90px" /></span><span
+                                  class="bigslam-sp-team-name">Real Soccer</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/real-soccer-vs-valencia/">VS</a></span>
+                              <div class="bigslam-sp-event-featured-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="105" height="120"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png"
+                                    class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png       105w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png  28w
+                                      " sizes="(max-width: 105px) 100vw, 105px" /></span><span
+                                  class="bigslam-sp-team-name">Valencia</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-featured-info">
+                              <span class="bigslam-sp-event-date">August 13, 2020</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/santiago-bernabeu-stadium/"
+                                  rel="tag">Santiago Bernabéu Stadium</a></span>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-featured-list clearfix">
+                            <div class="bigslam-sp-event-featured-title bigslam-title-font">
+                              <span class="bigslam-sp-team-logo"><img width="110" height="119"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png       110w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png  30w
+                                    " sizes="(max-width: 110px) 100vw, 110px" /></span><span
+                                class="bigslam-sp-team-name">Juventus</span><span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/juventus-vs-real-soccer/">VS</a></span><span
+                                class="bigslam-sp-team-name">Real Soccer</span><span class="bigslam-sp-team-logo"><img
+                                  width="90" height="89"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png       90w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15-32x32.png 32w
+                                    " sizes="(max-width: 90px) 100vw, 90px" /></span>
+                            </div>
+                            <div class="bigslam-sp-event-featured-info">
+                              <span class="bigslam-sp-event-date">August 15, 2020</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/allianz-stadium/"
+                                  rel="tag">Allianz Stadium</a></span><a class="bigslam-sp-event-link"
+                                href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/juventus-vs-real-soccer/">Preview<i
+                                  class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-featured-list clearfix">
+                            <div class="bigslam-sp-event-featured-title bigslam-title-font">
+                              <span class="bigslam-sp-team-logo"><img width="110" height="119"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png       110w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png  30w
+                                    " sizes="(max-width: 110px) 100vw, 110px" /></span><span
+                                class="bigslam-sp-team-name">Juventus</span><span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/juventus-vs-real-soccer-2/">VS</a></span><span
+                                class="bigslam-sp-team-name">Barcelona</span><span class="bigslam-sp-team-logo"><img
+                                  width="123" height="141"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19.png         123w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19-112x128.png 112w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19-28x32.png    28w
+                                    " sizes="(max-width: 123px) 100vw, 123px" /></span>
+                            </div>
+                            <div class="bigslam-sp-event-featured-info">
+                              <span class="bigslam-sp-event-date">August 20, 2020</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/allianz-stadium/"
+                                  rel="tag">Allianz Stadium</a></span><a class="bigslam-sp-event-link"
+                                href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/juventus-vs-real-soccer-2/">Preview<i
+                                  class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-featured-list clearfix">
+                            <div class="bigslam-sp-event-featured-title bigslam-title-font">
+                              <span class="bigslam-sp-team-logo"><img width="90" height="128"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16.png       90w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-16-23x32.png 23w
+                                    " sizes="(max-width: 90px) 100vw, 90px" /></span><span
+                                class="bigslam-sp-team-name">spurs</span><span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/spurs-vs-valencia/">VS</a></span><span
+                                class="bigslam-sp-team-name">Valencia</span><span class="bigslam-sp-team-logo"><img
+                                  width="105" height="120"
+                                  src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png"
+                                  class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
+                                  alt="" srcset="
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png       105w,
+                                      https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png  28w
+                                    " sizes="(max-width: 105px) 100vw, 105px" /></span>
+                            </div>
+                            <div class="bigslam-sp-event-featured-info">
+                              <span class="bigslam-sp-event-date">August 22, 2020</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/spurs-stadium/"
+                                  rel="tag">spurs stadium</a></span><a class="bigslam-sp-event-link"
+                                href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/spurs-vs-valencia/">Preview<i
+                                  class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"
+                  style="margin-top: -37px;">
+                  <a class="gdlr-core-button gdlr-core-button-gradient gdlr-core-button-no-border gdlr-core-button-full-width"
+                    href="#" style="
+                        font-size: 15px;
+                        font-weight: 600;
+                        letter-spacing: 0px;
+                        color: #ffffff;
+                        padding: 14px 33px 17px 33px;
+                        text-transform: none;
+                        border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        -webkit-border-radius: 0px;
+                        background: #e31b23;
+                      "><i class="gdlr-core-pos-left fa fa-eye" style="font-size: 17px;"></i><span
+                      class="gdlr-core-content">View Schedule</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gdlr-core-pbf-column gdlr-core-column-20">
+          <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
+              <div class="gdlr-core-pbf-element">
+                <div
+                  class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space"
+                  style="padding-bottom: 0px;">
+                  <div class="gdlr-core-text-box-item-content" style="text-transform: none;">
+                    <div class="sportspress sp-widget-align-none">
+                      <div class="sp-template sp-template-event-list">
+                        <h4 class="sp-table-caption">Latest Results</h4>
+                        <div class="bigslam-sp-event-widget-holder clearfix">
+                          <div class="bigslam-sp-event-widget-list">
+                            <div class="bigslam-sp-event-widget-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-widget-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="26" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-12-26x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-12-26x32.png    26w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-12-105x128.png 105w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-12.png         120w
+                                      " sizes="(max-width: 26px) 100vw, 26px" /></span><span
+                                  class="bigslam-sp-team-name">Man.Utd</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/juventus-vs-man-utd/">0<span
+                                    class="bigslam-sp-event-result-sep">
+                                    - </span>1</a></span>
+                              <div class="bigslam-sp-event-widget-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="30" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png  30w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png       110w
+                                      " sizes="(max-width: 30px) 100vw, 30px" /></span><span
+                                  class="bigslam-sp-team-name">Juventus</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-widget-info">
+                              <span class="bigslam-sp-event-date">August 1, 2019</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/allianz-stadium/"
+                                  rel="tag">Allianz Stadium</a></span>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-widget-list">
+                            <div class="bigslam-sp-event-widget-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-widget-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="28" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19-28x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19-28x32.png    28w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19-112x128.png 112w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-19.png         123w
+                                      " sizes="(max-width: 28px) 100vw, 28px" /></span><span
+                                  class="bigslam-sp-team-name">Barcelona</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/barcelona-vs-liverpool/">2<span
+                                    class="bigslam-sp-event-result-sep">
+                                    - </span>1</a></span>
+                              <div class="bigslam-sp-event-widget-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="30" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2017/03/flag-14-30x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2017/03/flag-14-30x32.png  30w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2017/03/flag-14.png       110w
+                                      " sizes="(max-width: 30px) 100vw, 30px" /></span><span
+                                  class="bigslam-sp-team-name">Liverpool</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-widget-info">
+                              <span class="bigslam-sp-event-date">August 2, 2019</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/camp-nou/"
+                                  rel="tag">Camp Nou</a></span>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-widget-list">
+                            <div class="bigslam-sp-event-widget-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-widget-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="28" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png  28w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png       105w
+                                      " sizes="(max-width: 28px) 100vw, 28px" /></span><span
+                                  class="bigslam-sp-team-name">Valencia</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/valencia-vs-sevilla/">2<span
+                                    class="bigslam-sp-event-result-sep">
+                                    - </span>0</a></span>
+                              <div class="bigslam-sp-event-widget-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="26" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-2-26x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-2-26x32.png    26w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-2-105x128.png 105w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-2.png         120w
+                                      " sizes="(max-width: 26px) 100vw, 26px" /></span><span
+                                  class="bigslam-sp-team-name">Sevilla</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-widget-info">
+                              <span class="bigslam-sp-event-date">August 5, 2019</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/mestalla-stadium/"
+                                  rel="tag">Mestalla Stadium</a></span>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-widget-list">
+                            <div class="bigslam-sp-event-widget-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-widget-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="32" height="28"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-20-32x28.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-20-32x28.png 32w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-20.png       90w
+                                      " sizes="(max-width: 32px) 100vw, 32px" /></span><span
+                                  class="bigslam-sp-team-name">Napoli</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/napoli-vs-juventus/">2<span
+                                    class="bigslam-sp-event-result-sep">
+                                    - </span>0</a></span>
+                              <div class="bigslam-sp-event-widget-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="30" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4-30x32.png  30w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-4.png       110w
+                                      " sizes="(max-width: 30px) 100vw, 30px" /></span><span
+                                  class="bigslam-sp-team-name">Juventus</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-widget-info">
+                              <span class="bigslam-sp-event-date">August 7, 2019</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/san-paolo-stadium/"
+                                  rel="tag">San Paolo Stadium</a></span>
+                            </div>
+                          </div>
+                          <div class="bigslam-sp-event-widget-list">
+                            <div class="bigslam-sp-event-widget-title bigslam-title-font clearfix">
+                              <div class="bigslam-sp-event-widget-title-left">
+                                <span class="bigslam-sp-team-logo"><img width="32" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15-32x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15-32x32.png 32w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-15.png       90w
+                                      " sizes="(max-width: 32px) 100vw, 32px" /></span><span
+                                  class="bigslam-sp-team-name">Real Soccer</span>
+                              </div>
+                              <span class="bigslam-sp-event-result"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/event/real-soccer-vs-valencia/">VS</a></span>
+                              <div class="bigslam-sp-event-widget-title-right">
+                                <span class="bigslam-sp-team-logo"><img width="28" height="32"
+                                    src="https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png"
+                                    class="attachment-sportspress-fit-mini size-sportspress-fit-mini wp-post-image"
+                                    alt="" srcset="
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13-28x32.png  28w,
+                                        https://demo.goodlayers.com/bigslam/homepages/soccer02/wp-content/uploads/sites/5/2019/09/flag-13.png       105w
+                                      " sizes="(max-width: 28px) 100vw, 28px" /></span><span
+                                  class="bigslam-sp-team-name">Valencia</span>
+                              </div>
+                            </div>
+                            <div class="bigslam-sp-event-widget-info">
+                              <span class="bigslam-sp-event-date">August 13, 2020</span><span
+                                class="bigslam-sp-event-venue"><a
+                                  href="https://demo.goodlayers.com/bigslam/homepages/soccer02/venue/santiago-bernabeu-stadium/"
+                                  rel="tag">Santiago Bernabéu Stadium</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
+                  <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-button-no-border" href="#"
+                    id="gdlr-core-button-id-11927"><span class="gdlr-core-content">View All Results</span><i
+                      class="gdlr-core-pos-right fa fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <section class="shedule">
+    <div class="wrapper">
+      <div class="vc_row wpb_row vc_">
+        <div class="wpb_column  vc_col-sm-12">
+          <div class="vc_column-inner ">
+            <div class="wpb_wrapper">
+              <h2 class="heading" style="
+                    font-family: " Raleway", sans-serif; font-weight: 400; font-style: normal; color: #232a32; ">
+                Match <span style=" color: #e23e57;">Schedule</span>
+              </h2>
+              <div class="wpb_raw_code   ">
+                <div class="wpb_wrapper">
+                  <p class="headParagraph">
+                    Ireland struggled in the opening 45 minutes to get to
+                    grips with the short-passing Spaniards and when they did
+                    win the ball back they struggled to retain possession. The
+                    Spanish were really dangerous on the break and twice in
+                    the first 22 minutes Bravis Bermedes went close, her
+                    second effort being cleared off the line by Sophie Perry.
+                  </p>
+                </div>
+              </div>
+              <div class="matchSchedule_details ">
+                <div class="row">
+                  <div class="match_next right-triangle">
+                    <div class="wrap_match_next right-triangle">
+                      <div class="right-padding">
+                        <h4 class="headline03">NEXT MATCH</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match_versus">
+                    <div class="bg-blackimg match_versus02" style="
+                          background: url();
+                          background-repeat: repeat;
+                          background-size: contain;
+                        ">
+                      <div class="nextmatchDetails">
+                        <p>
+                          Elemo Berny was a lot busier of the two strikers but
+                          at the other end Navrine Silverra while Megan
+                          Campbell’s free-kick produced an wonderful stop from
+                          the Spanish keeper.
+                        </p>
+                        <div class="wrap-logo clearfix">
+                          <div class="logo-match">
+                            <img
+                              src="http://wp.0effortthemes.com/themes/soccerclub/wp-content/uploads/2020/06/logo01.png"
+                              alt="team-logo-Middlesbrough" />
+                          </div>
+                          <div class="match_vs">vs</div>
+                          <div class="logo-match">
+                            <img
+                              src="http://wp.0effortthemes.com/themes/soccerclub/wp-content/uploads/2020/06/logo02.png"
+                              alt="team-logo-Hull City" />
+                          </div>
+                        </div>
+                        <p class="match_dtls">
+                          Saturday Sept 05, 2020 18:00:00 AM
+                        </p>
+                        <p class="match_dtls">
+                          Favorit Arena, Boston, USA.
+                        </p>
+                      </div>
+                      <a class="match_link"
+                        href="http://wp.0effortthemes.com/themes/soccerclub/match/middlesbrough-vs-hull-city/">Details</a>
+                      <!-- <a class="btn btn-4 "
+                        href="http://wp.0effortthemes.com/themes/soccerclub/match/middlesbrough-vs-hull-city/"><span>Hover</span></a> -->
+                    </div>
+                  </div>
+                  <div class="match_timing" data-date="02/01/2018-8:05:00">
+                    <ul class="counter-wrap">
+                      <li><span class="test">00</span>days</li>
+                      <li><span>00</span>hours</li>
+                      <li><span>00</span>minutes</li>
+                      <li><span>00</span>seconds</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="matchSchedule_details ">
+                <div class="row">
+                  <div class="match_versus-wrap">
+                    <div class="wrap_match-innerdetails">
+                      <div class="slimScrollDiv" style="
+                            position: relative;
+                            overflow: hidden;
+                            width: auto;
+                            height: 400px;
+                          ">
+                        <ul class="home_tInfo scrollable" style="
+                              background: url('img/bg_shedule2.jpg') 0% 0% /
+                                cover no-repeat;
+                              overflow: hidden;
+                              width: auto;
+                              height: 400px;
+                            ">
+                          <li>
+                            <ul class="t_info match_info01 headline01 clearfix">
+                              <li>1</li>
+                              <li>
+                                <div class="headline01 clearfix">
+                                  <span>FC Favorit Club</span>
+                                  <span class="vs">vs</span>
+                                  <span>FC Loser</span>
+                                </div>
+                                <div class="paragraph02 clearfix">
+                                  <span>Thu, 7/28/2020</span>
+                                  <span>06:05 am +0000</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="t_info match_info01 headline01 clearfix">
+                              <li>2</li>
+                              <li>
+                                <div class="headline01 clearfix">
+                                  <span>Barcelona</span>
+                                  <span class="vs">vs</span>
+                                  <span>Juventas</span>
+                                </div>
+                                <div class="paragraph02 clearfix">
+                                  <span>Thu, 7/28/2020</span>
+                                  <span>08:00 am +0000</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="t_info match_info01 headline01 clearfix">
+                              <li>3</li>
+                              <li>
+                                <div class="headline01 clearfix">
+                                  <span>Barcelona</span>
+                                  <span class="vs">vs</span>
+                                  <span>City</span>
+                                </div>
+                                <div class="paragraph02 clearfix">
+                                  <span>Fri, 7/29/2020</span>
+                                  <span>08:00 am -1200</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="t_info match_info01 headline01 clearfix">
+                              <li>4</li>
+                              <li>
+                                <div class="headline01 clearfix">
+                                  <span>Barcelona</span>
+                                  <span class="vs">vs</span>
+                                  <span>PSG</span>
+                                </div>
+                                <div class="paragraph02 clearfix">
+                                  <span>Sat, 7/30/2020</span>
+                                  <span>05:45 am +0530</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="t_info match_info01 headline01 clearfix">
+                              <li>5</li>
+                              <li>
+                                <div class="headline01 clearfix">
+                                  <span>Barcelona</span>
+                                  <span class="vs">vs</span>
+                                  <span>Scorpions</span>
+                                </div>
+                                <div class="paragraph02 clearfix">
+                                  <span>Wed, 8/3/2020</span>
+                                  <span>10:20 am +0000</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <div class="slimScrollBar" style="
+                              background: rgb(0, 0, 0);
+                              width: 0px;
+                              position: absolute;
+                              top: 0px;
+                              opacity: 0.4;
+                              display: none;
+                              border-radius: 7px;
+                              z-index: 99;
+                              right: 1px;
+                              height: 282.686px;
+                            "></div>
+                        <div class="slimScrollRail" style="
+                              width: 0px;
+                              height: 100%;
+                              position: absolute;
+                              top: 0px;
+                              display: none;
+                              border-radius: 7px;
+                              background: rgb(51, 51, 51);
+                              opacity: 0.2;
+                              z-index: 90;
+                              right: 1px;
+                            "></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match_next">
+                    <div class="wrap_match_next left_triangle">
+                      <div class="left_padding">
+                        <h4 class="headline03">UPCOMING MATCHES</h4>
+                        <p>
+                          Having managed to keep the game scoreless to
+                          half-time, Ireland were dealt a body blow two
+                          minutes after the restart.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="matchSchedule_details ">
+                <div class="row">
+                  <div class="match_next">
+                    <div class="wrap_match_next right-triangle">
+                      <div class="right-padding">
+                        <h4 class="headline03">POINTS TABLE</h4>
+                        <p>
+                          Having managed to keep the game scoreless to
+                          half-time, Ireland were dealt a body blow two
+                          minutes after the restart.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match_versus-wrap">
+                    <div class="wrap_match-innerdetails" style="
+                          background: url('img/bg_shedule2.jpg');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                        ">
+                      <div class="slimScrollDiv" style="
+                            position: relative;
+                            overflow: hidden;
+                            width: auto;
+                            height: 400px;
+                          ">
+                        <ul class="point_table scrollable" style="
+                              overflow: hidden;
+                              width: auto;
+                              height: 400px;
+                            ">
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">1</div>
+                              <div class="headline01 largepoint">
+                                Sánní AFC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>8</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">2</div>
+                              <div class="headline01 largepoint">
+                                Luciano COUNTY
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>8</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">3</div>
+                              <div class="headline01 largepoint">
+                                NOTTINGHAM FOREST
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>6</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">4</div>
+                              <div class="headline01 largepoint">
+                                QUEENS PARK RANGERS
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>6</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">5</div>
+                              <div class="headline01 largepoint">
+                                MILLWALL FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>5</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">6</div>
+                              <div class="headline01 largepoint">
+                                MIDDLESBROUGH FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>5</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">7</div>
+                              <div class="headline01 largepoint">
+                                SHEFFIELD UNITED FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>4</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">8</div>
+                              <div class="headline01 largepoint">
+                                MIDDLESBROUGH FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>4</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">9</div>
+                              <div class="headline01 largepoint">
+                                HULL CITY FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>3</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix">
+                            <div class="subPoint_table">
+                              <div class="headline01 smallpoint">10</div>
+                              <div class="headline01 largepoint">
+                                JEMEZ CITY FC
+                              </div>
+                              <div class="headline01 smallpoint row row">
+                                <span>p</span><span>3</span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="slimScrollBar" style="
+                              background: rgb(0, 0, 0);
+                              width: 0px;
+                              position: absolute;
+                              top: 0px;
+                              opacity: 0.4;
+                              display: none;
+                              border-radius: 7px;
+                              z-index: 99;
+                              right: 1px;
+                              height: 285.714px;
+                            "></div>
+                        <div class="slimScrollRail" style="
+                              width: 0px;
+                              height: 100%;
+                              position: absolute;
+                              top: 0px;
+                              display: none;
+                              border-radius: 7px;
+                              background: rgb(51, 51, 51);
+                              opacity: 0.2;
+                              z-index: 90;
+                              right: 1px;
+                            "></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+  <script src="js/libs/slick.min.js"></script>
+
+  <script src="js/general.js"></script>
+</body>
+
+</html>
